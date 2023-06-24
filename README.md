@@ -5,23 +5,30 @@ Dolby.io [Streaming Getting Started Guide](https://docs.dolby.io/streaming-apis/
 
 ## Overview
 
-The [documentation](https://docs.dolby.io/streaming-apis/docs/getting-started) explain how to get started with the Web SDK. 
+The [documentation](https://docs.dolby.io/streaming-apis/docs/getting-started) explains how to get started with the Web SDK. 
 
-There are two distinct single-page apps:
-- broadcast-app: capture and broadcast a live audio and video feed that can be broadcast with Dolby.io Real-time Streaming
-- playback-app: view a live feed from the Dolby.io Real-time Streaming 
+There are two distinct single-page apps included:
+- **broadcast-app**: capture and broadcast a live audio and video feed that can be broadcast with Dolby.io Real-time Streaming
+- **playback-app**: view a live feed from the platform
 
-The **index.html** provides basic layout and scaffolding and **final.html** is the basic functioning application.
+## Getting Started
+
+Review the [Getting Started Guide](https://docs.dolby.io/streaming-apis/docs/getting-started) for an explanation of the code.
+
+Each app contains:
+- **index.html**: basic layout and scaffolding to begin with
+- **final.html**: functioning application after integrating the Web SDK
 
 ## Requirements 
 
+You will need:
+- A [Dolby.io Account](https://dashboard.dolby.io/signup)
+- A web browser such as Chrome, Safari, or Firefox
+
 To focus attention on how to use the Dolby.io Real-time Streaming Web SDK, this sample is built using only basic HTML, CSS, and JavaScript.
 
-You will need:
-- Dolby.io Account
-- Web browser
-
 ## Give Feedback or Report a Bug
+
 If you run into any errors or have questions, create a [GitHub issue](https://github.com/dolbyio-samples/stream-sdk-web-getting-started/issues).
 
 # About Dolby.io
