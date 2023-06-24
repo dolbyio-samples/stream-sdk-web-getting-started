@@ -1,36 +1,28 @@
-<!--
-[![Build Package](https://github.com/dolbyio-samples/template-repo/actions/workflows/build-package.yml/badge.svg)](https://github.com/dolbyio-samples/template-repo/actions/workflows/build-package.yml)
-[![Publish Package](https://github.com/dolbyio-samples/template-repo/actions/workflows/publish-package.yml/badge.svg)](https://github.com/dolbyio-samples/template-repo/actions/workflows/publish-package.yml)
-[![npm](https://img.shields.io/npm/v/dolbyio-samples/template-repo)](https://www.npmjs.com/package/dolbyio-samples/template-repo)
-[![License](https://img.shields.io/github/license/dolbyio-samples/template-repo)](LICENSE)
 
-Adding shields would also be amazing -->
+# Getting Started with Dolby.io Streaming Web SDK
+This repository contains the starter application and companion sample code that is explained in the 
+Dolby.io [Streaming Getting Started Guide](https://docs.dolby.io/streaming-apis/docs/getting-started).
 
-# Title of Repo
-One sentence linking to the tutorial and what this repo is for.
+## Overview
 
-# Overview
-Two or three sentences describing the overall output.
+The [documentation](https://docs.dolby.io/streaming-apis/docs/getting-started) explain how to get started with the Web SDK. 
 
-# Requirements 
-List any hardware, software, or library dependencies the users would have to install to follow the tutorial or use the sample project. 
+There are two distinct single-page apps:
+- broadcast-app: capture and broadcast a live audio and video feed that can be broadcast with Dolby.io Real-time Streaming
+- playback-app: view a live feed from the Dolby.io Real-time Streaming 
 
-# Getting Started 
-A good area to mention they should sign up for Dolby.io to use the APIs, the free 50GBs, or anything they should have to follow along
+The **index.html** provides basic layout and scaffolding and **final.html** is the basic functioning application.
 
-# Report a Bug 
-In the case any bugs occur, report it using Github issues, and we will see to it. 
+## Requirements 
 
-# Forking
-We welcome your interest in trying to experiment with our repos.
+To focus attention on how to use the Dolby.io Real-time Streaming Web SDK, this sample is built using only basic HTML, CSS, and JavaScript.
 
-# Feedback 
-If there are any suggestions or if you would like to deliver any positive notes, feel free to open an issue and let us know!
+You will need:
+- Dolby.io Account
+- Web browser
 
-# Learn More
-For a deeper dive, we welcome you to review the following:
-  *bulleted list of blogs or docs pages that might be useful* 
-
+## Give Feedback or Report a Bug
+If you run into any errors or have questions, create a [GitHub issue](https://github.com/dolbyio-samples/stream-sdk-web-getting-started/issues).
 
 # About Dolby.io
 
