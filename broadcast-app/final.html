@@ -45,54 +45,57 @@
             const main = async () => {
 
                 // Step 2.2b: Set your account id and stream name while Getting Started
-                const yourPublishingToken = "ENTER PUBLISHING TOKEN";
+                const yourPublishingToken = 'ENTER PUBLISHING TOKEN';
                 const yourStreamAccountId = 'ENTER ACCOUNT ID';
-                const yourStreamName = "ENTER YOUR STREAM NAME";
+                const yourStreamName = 'ENTER YOUR STREAM NAME';
 
                 const tokenGenerator = () =>
-                    window.millicast.Director.getPublisher({
+                    millicast.Director.getPublisher({
                         token: yourPublishingToken, 
                         streamName: yourStreamName,
                     });
 
                 // Callback to generate a publisher token with credentials
-                const publisher = new window.millicast.Publish(yourStreamName, tokenGenerator);
+                const publisher = new millicast.Publish(yourStreamName, tokenGenerator);
 
                 // Step 2.2c: Attach a millicast view to the placeholder node
                 const startStreaming = async () => {
 
                     // Request access to the video camera and microphone
-                    const mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+                    const mediaStream = await navigator.mediaDevices.getUserMedia({
+                        audio: true,
+                        video: true
+                    });
 
                     // Provide mirror in a video element of the capture
-                    const videoNode = document.getElementById("streaming-video-placeholder");
+                    const videoNode = document.getElementById('streaming-video-placeholder');
                     videoNode.srcObject = mediaStream;
                     videoNode.hidden = false;
                     videoNode.autoplay = true;
 
                     // Broadcast captured audio and video
                     const broadcastOptions = {
-                        mediaStream: mediaStream
+                        mediaStream: mediaStream,
                     };
                     try {
                         await publisher.connect(broadcastOptions);
-                        console.log("Broadcast has begun.");
+                        console.log('Broadcast has begun.');
 
                         // Example to playback with the hosted viewer
                         const viewerUrl = `https://viewer.millicast.com?streamId=${yourStreamAccountId}/${yourStreamName}`;
-                        document.getElementById("viewer-url").innerHTML = `<a href="${viewerUrl}" target="_new">${viewerUrl}</a>`;
+                        document.getElementById('viewer-url').innerHTML = `<a href="${viewerUrl}" target="_new">${viewerUrl}</a>`;
                     } catch (e) {
-                        console.error("Failed to begin broadcast: ", e);
+                        console.error('Failed to begin broadcast: ', e);
                     }
                 }
 
                 // Handle button click to begin
-                document.getElementById("btn-start").onclick = async () => {
+                document.getElementById('btn-start').onclick = async () => {
                     await startStreaming();
                 };
 
                 // Step 2.2d: Stop the broadcast
-                document.getElementById("btn-stop").onclick = () => {
+                document.getElementById('btn-stop').onclick = () => {
                     publisher.stop();
                     location.reload();
                 }
