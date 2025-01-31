@@ -1,7 +1,7 @@
+# Getting Started with Dolby Millicast Web SDK
 
-# Getting Started with Dolby.io Streaming Web SDK
 This repository contains the starter application and companion sample code that is explained in the 
-Dolby.io [Streaming Getting Started Guide](https://docs.dolby.io/streaming-apis/docs/getting-started).
+Dolby [Millicast Getting Started Guide](https://docs.dolby.io/streaming-apis/docs/getting-started).
 
 ## Overview
 
@@ -23,9 +23,9 @@ Each app contains:
 
 You will need:
 - A [Dolby.io Account](https://dashboard.dolby.io/signup)
-- A web browser such as Chrome, Safari, or Firefox
+- A web browser such as Chrome, Edge, Safari, or Firefox
 
-To focus attention on how to use the Dolby.io Real-time Streaming Web SDK, this sample is built using only basic HTML, CSS, and JavaScript.
+To focus attention on how to use the Dolby Millicast Web SDK, this sample is built using only basic HTML, CSS, and JavaScript.
 
 ## Give Feedback or Report a Bug
 
